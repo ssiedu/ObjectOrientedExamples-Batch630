@@ -2,7 +2,10 @@
 public class ResultProcessing {
     public static void main(String[] args) {
         Student s1=new Student();
-        s1.rno=111;s1.marks1=50;s1.marks2=60; s1.marks3=70;
+        s1.setData(111, "AAA", 50, 60, 70);
+        s1.computeTotal();
+        s1.computingPercentage();
+        /*
         Student s2=new Student();
         s2.rno=112;s2.marks1=40;s2.marks2=50; s2.marks3=60;
         Student s3=new Student();
@@ -16,6 +19,6 @@ public class ResultProcessing {
         System.out.println("Result of S3");
         s3.computeTotal();
         s3.computingPercentage();
-        
+        */
     }
 }
