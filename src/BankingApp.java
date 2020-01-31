@@ -10,12 +10,20 @@ public class BankingApp {
         ac2.setData(112,"BBB",20000);
         ac3.setData(113,"CCC",30000);
         
+        /*
+        //static showData
+        Account.showData(ac1);
+        Account.showData(ac2);
+        Account.showData(ac3);
+        */
+        
         ac1.showData();
         ac2.showData();
         ac3.showData();
         
-        ac1.showTotalCash();
-        ac2.showTotalCash();
-        ac3.showTotalCash();
+        
+        Account.showTotalCash();
+       
+        
     }
 }
