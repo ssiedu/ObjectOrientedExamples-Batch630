@@ -4,6 +4,18 @@ public class Account {
     private int balance;
     private static int totalCash;
 
+    public Account(int ano, String name, int balance) {
+        this.ano = ano;
+        this.name = name;
+        this.balance = balance;
+    }
+
+    public Account() {
+    }
+
+    
+    
+    
     public static void showAvg(Account...tmp){
         int n=tmp.length;
         int totalBalance=0;
@@ -32,10 +44,10 @@ public class Account {
         System.out.println(ano+","+name+","+balance);
     }
     
-    public void setData(int a, String b, int c){
-        ano=a;
-        name=b;
-        balance=c;
-        totalCash=totalCash+c;
+    public void setData(int ano, String name, int balance){
+        this.ano=ano;
+        this.name=name;
+        this.balance=balance;
+        totalCash=totalCash+balance;
     }
 }

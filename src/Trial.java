@@ -2,7 +2,34 @@ public class Trial {
 
     private int x, y;
     public Trial(int a, int b){x=a;y=b;}
-    public void show(){System.out.println(x+","+y);}
+    public void show(){
+        int x=500;
+        System.out.println("X  : "+this.x);
+        System.out.println("Y  : "+this.y);
+    }
+
+   
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Trial other = (Trial) obj;
+        if (this.x != other.x) {
+            return false;
+        }
+        if (this.y != other.y) {
+            return false;
+        }
+        return true;
+    }
+    
+   
     
     public static void main(String[] args) {
         
